@@ -15,6 +15,18 @@ github.loadAll( function(data){
   $rc.empty();
   var html = JST.repo(repos[0]);
   $rc.append(html);
+ 
+// change time stuff
 
+  var $profile = $(".handlebar-profile");
+  $profile.empty();
+  user.totalStars = starred.length;
+  var code = JST.profile(user);
+  $profile.append(code);
+
+  var $organs = $(".organizations")
+  $organs.empty();
+  var orgCode = JST.organizations(orgs[0]);
+  $organs.append(orgCode);
 
 });
