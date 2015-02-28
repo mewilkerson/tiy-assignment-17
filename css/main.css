@@ -1,0 +1,140 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+header {
+  background: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.content {
+  width: 1200px;
+  /*background: #f5f5f5;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-header-area {
+  float: left;
+  /* width: 200px; */
+  /* background: green; */
+}
+.logo {
+  float: left;
+  font-size: 42px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.octicon-triangle-down {
+  font-size: 10px;
+  padding-bottom: 4px;
+}
+.octicon {
+  font-size: 20px;
+}
+.search-bar {
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+/*.search-form {
+ 
+}*/
+.links {
+  float: left;
+  margin-top: 7px;
+}
+.links li {
+  float: left;
+  margin-left: 8px;
+  list-style: none;
+  font-weight: bold;
+}
+.right-header-area {
+  float: right;
+  /* background: green; */
+  padding-bottom: 8px;
+}
+.top-right-nav li {
+  float: right;
+  list-style: none;
+  margin-right: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.clear-float {
+  clear: both;
+}
+.main {
+  margin-top: 20px;
+}
+.sidebar {
+  float: left;
+  width: 25%;
+  background: red;
+}
+.primary-column {
+  float: left;
+  width: calc(55%);
+  /*background: blue;*/
+  height: 900px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.profile-picture {
+  text-align: center;
+}
+.profile-picture img {
+  border-radius: 7px;
+}
+.tab-bar {
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.tab-bar-left {
+  float: left;
+}
+.tab-bar-left li {
+  float: left;
+  margin-left: 8px;
+  list-style: none;
+  padding: 8px 12px 7px;
+  color: #666;
+}
+.tab-bar-right {
+  float: right;
+  padding: 8px 12px 7px;
+  margin-top: 15px;
+  color: #666;
+}
+.filter-bar {
+  margin-top: 10px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  color: #666;
+  padding-bottom: 10px;
+}
+.filter-bar-left {
+  float: left;
+}
+.filter-bar-right {
+  float: right;
+  /*padding-bottom: 6px;*/
+}
+.filter-bar-right li {
+  float: right;
+  margin-left: 8px;
+  list-style: none;
+}
+.repo-display {
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+.repo-display li {
+  float: right;
+  list-style: none;
+}
+.repo-display-right {
+  float: right;
+}
+.clear-repo {
+  clear: right;
+}
