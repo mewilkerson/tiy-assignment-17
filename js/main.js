@@ -5,16 +5,23 @@ var github = new Github("mewilkerson");
 // functions below when data is ready
 
 github.loadAll( function(data){
-  var repos = data.repos;
+  var repo = data.repos;
   var orgs = data.orgs;
   var starred = data.starred;
   var user = data.user;
 
+    var $rc = $(".repos-container");
+    $rc.empty();
 
-  var $rc = $(".repos-container");
-  $rc.empty();
-  var html = JST.repo(repos[0]);
-  $rc.append(html);
+_.each(repo, function(repo){
+    var html = JST.repo(repo);
+    $rc.append(html);
+  });
+
+  // var $rc = $(".repos-container");
+  // $rc.empty();
+  // var html = JST.repo(repos[0]);
+  // $rc.append(html);
  
 // change time stuff
 
