@@ -38,15 +38,19 @@ this["JST"]["profile"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"
 this["JST"] = this["JST"] || {};
 this["JST"]["repo"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "<div class=\"repo-display\">\n  <ul class=\"repo-list\">\n    <li>\n      <div class=\"repo-details-right\">"
-    + escapeExpression(((helper = (helper = helpers.language || (depth0 != null ? depth0.language : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"language","hash":{},"data":data}) : helper)))
-    + "\n        <a class=\"stargazers\" href=\"#\">"
-    + escapeExpression(((helper = (helper = helpers.stargazers_count || (depth0 != null ? depth0.stargazers_count : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"stargazers_count","hash":{},"data":data}) : helper)))
-    + "</a>\n        <a class=\"forked\" href=\"#\">"
-    + escapeExpression(((helper = (helper = helpers.forks || (depth0 != null ? depth0.forks : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"forks","hash":{},"data":data}) : helper)))
-    + "</a>\n      </div>\n      <h3>\n        <a href=\"#\">"
+  return "\n<div class=\"repo-display\">\n  \n  <div class=\"repo-left\">\n    <h3><a href=\""
+    + escapeExpression(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"html_url","hash":{},"data":data}) : helper)))
+    + "\">"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</a>\n      </h3>\n      <p>Last updated: "
+    + "</a></h3>\n    <h4>"
+    + escapeExpression(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"description","hash":{},"data":data}) : helper)))
+    + "</h4>\n    <h5>Last updated: "
     + escapeExpression(((helper = (helper = helpers.updated_at || (depth0 != null ? depth0.updated_at : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"updated_at","hash":{},"data":data}) : helper)))
-    + "</p>\n    </li>\n  </ul>\n  <div class=\"clear-repo\"></div>\n</div>  ";
+    + "</h5>\n  </div>\n  \n  <div class=\"repo-right\">\n    <div class=\"repo-stats\">\n      <ul>\n        <li><h5><span class=\"octicon octicon-git-branch\"></span> "
+    + escapeExpression(((helper = (helper = helpers.forks || (depth0 != null ? depth0.forks : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"forks","hash":{},"data":data}) : helper)))
+    + "</h5></li>\n        <li><h5><span class=\"octicon octicon-star\"></span> "
+    + escapeExpression(((helper = (helper = helpers.stargazers_count || (depth0 != null ? depth0.stargazers_count : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"stargazers_count","hash":{},"data":data}) : helper)))
+    + "</h5></li>\n        <li><h5 class=\"language\">"
+    + escapeExpression(((helper = (helper = helpers.language || (depth0 != null ? depth0.language : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"language","hash":{},"data":data}) : helper)))
+    + "</h5></li>\n      </ul>\n    </div>  \n  </div>\n\n</div>";
 },"useData":true});
