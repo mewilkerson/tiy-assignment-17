@@ -102,21 +102,28 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.profile-stats ul {
-  margin-right: 70px;
-}
 .profile-stats li {
   list-style: none;
   display: block;
   float: left;
   text-align: center;
-  width: 33.2%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .profile-stats .stat {
-  font-size: 10px;
+  font-size: 11px;
   color: #999;
   margin-left: auto;
   margin-right: auto;
+}
+.stat-num {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4183c4;
+}
+.organizations-wrapper {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .organizations img {
   width: 42px;
@@ -208,4 +215,44 @@ header {
 }
 .repo-stats .language {
   padding-top: 6px;
+}
+footer {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  height: 100px;
+}
+.footer-wrapper {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 35px;
+}
+.footer-wrapper li {
+  list-style: none;
+  font-size: 12px;
+  color: #4183c4;
+}
+.footer-left {
+  float: left;
+}
+.footer-left li {
+  float: left;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.footer-right {
+  float: right;
+}
+.footer-right li {
+  float: right;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.footer-left ul .github {
+  color: #777;
+  margin-left: 0;
+}
+.footer-left ul .octicon-mark-github {
+  margin-left: 225px;
+  font-size: 30px;
+  color: #e5e5e5;
+  margin-bottom: 10px;
 }
