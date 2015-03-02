@@ -8,32 +8,30 @@ this["JST"]["icon"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"mai
 this["JST"] = this["JST"] || {};
 this["JST"]["organizations"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "  <div class=\"organizations\">\n    <h4>Organizations</h4>\n    <a href=\""
+  return "  <div class=\"organizations\">\n    <div class=\"organizations-wrapper\">\n      <h4>Organizations</h4>\n      <a href=\""
     + escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"url","hash":{},"data":data}) : helper)))
     + "\"><img src=\""
     + escapeExpression(((helper = (helper = helpers.avatar_url || (depth0 != null ? depth0.avatar_url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"avatar_url","hash":{},"data":data}) : helper)))
     + "\" alt=\""
     + escapeExpression(((helper = (helper = helpers.login || (depth0 != null ? depth0.login : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"login","hash":{},"data":data}) : helper)))
-    + "\"></a>\n  </div>";
+    + "\"></a>\n    </div>  \n  </div>";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["profile"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "<div class=\"handlebar-profile\">\n  <div class=\"profile-picture\">\n    <img class=\"avatar\" src="
+  return "<div class=\"handlebar-profile\">\n  <div class=\"profile-wrapper\">\n    <div class=\"profile-picture\">\n      <img class=\"avatar\" src="
     + escapeExpression(((helper = (helper = helpers.avatar_url || (depth0 != null ? depth0.avatar_url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"avatar_url","hash":{},"data":data}) : helper)))
-    + " alt=\"Profile Picture\" height=\"230\" />\n  </div>\n  <div class=\"profile-name\">\n    <h2>"
+    + " alt=\"Profile Picture\" height=\"230\" />\n    </div>\n    <div class=\"profile-name\">\n      <h2>"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</h2>\n    <h3>"
+    + "</h2>\n      <h3>"
     + escapeExpression(((helper = (helper = helpers.login || (depth0 != null ? depth0.login : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"login","hash":{},"data":data}) : helper)))
-    + "</h3>\n  </div>  \n  <div class=\"joined-on-bar\">\n    <p>Joined on "
-    + escapeExpression(((helper = (helper = helpers.created_at || (depth0 != null ? depth0.created_at : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"created_at","hash":{},"data":data}) : helper)))
-    + "</p>\n  </div>\n  <div class=\"profile-stats\">\n    <ul>\n      <li><span>"
+    + "</h3>\n    </div>  \n    <div class=\"joined-on-bar\">\n      <p><span class=\"octicon octicon-clock\"></span> Joined on Jan 22, 2015</p>\n    </div>\n    <div class=\"profile-stats\">\n      <ul>\n        <li><span>"
     + escapeExpression(((helper = (helper = helpers.followers || (depth0 != null ? depth0.followers : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"followers","hash":{},"data":data}) : helper)))
-    + "</span><p>Followers</p></li>\n      <li><span>"
+    + "</span><p class=\"stat\">Followers</p></li>\n        <li><span>"
     + escapeExpression(((helper = (helper = helpers.totalStars || (depth0 != null ? depth0.totalStars : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"totalStars","hash":{},"data":data}) : helper)))
-    + "</span><p>Starred</p></li>\n      <li><span>"
+    + "</span><p class=\"stat\">Starred</p></li>\n        <li><span>"
     + escapeExpression(((helper = (helper = helpers.following || (depth0 != null ? depth0.following : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"following","hash":{},"data":data}) : helper)))
-    + "</span><p>Following</p></li>\n    </ul>\n  </div>\n</div>";
+    + "</span><p class=\"stat\">Following</p></li>\n      </ul>\n    </div>\n  </div>\n</div>";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["repo"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -42,9 +40,9 @@ this["JST"]["repo"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"mai
     + escapeExpression(((helper = (helper = helpers.html_url || (depth0 != null ? depth0.html_url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"html_url","hash":{},"data":data}) : helper)))
     + "\">"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</a></h3>\n    <h4>"
+    + "</a></h3>\n    <p>"
     + escapeExpression(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"description","hash":{},"data":data}) : helper)))
-    + "</h4>\n    <h5>Last updated: "
+    + "</p>\n    <h5>Last updated: "
     + escapeExpression(((helper = (helper = helpers.updated_at || (depth0 != null ? depth0.updated_at : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"updated_at","hash":{},"data":data}) : helper)))
     + "</h5>\n  </div>\n  \n  <div class=\"repo-right\">\n    <div class=\"repo-stats\">\n      <ul>\n        <li><h5><span class=\"octicon octicon-git-branch\"></span> "
     + escapeExpression(((helper = (helper = helpers.forks || (depth0 != null ? depth0.forks : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"forks","hash":{},"data":data}) : helper)))

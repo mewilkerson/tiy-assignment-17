@@ -65,25 +65,68 @@ header {
 }
 .sidebar {
   float: left;
-  width: 25%;
-  background: red;
+  width: 20%;
+}
+.profile-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.profile-picture img {
+  border-radius: 7px;
+}
+.profile-name {
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+.profile-name h2 {
+  margin: 8px 0 0 0;
+  font-size: 30px;
+}
+.profile-name h3 {
+  margin: 0;
+  font-weight: normal;
+  color: #666;
+  padding-bottom: 15px;
+}
+.joined-on-bar {
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.profile-stats {
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.profile-stats ul {
+  margin-right: 70px;
+}
+.profile-stats li {
+  list-style: none;
+  display: block;
+  float: left;
+  text-align: center;
+  width: 33.2%;
+}
+.profile-stats .stat {
+  font-size: 10px;
+  color: #999;
+  margin-left: auto;
+  margin-right: auto;
 }
 .organizations img {
   width: 42px;
 }
 .primary-column {
   float: left;
-  width: calc(55%);
-  /*background: blue;*/
-  height: 900px;
+  width: 73%;
   padding-left: 10px;
   padding-right: 10px;
-}
-.profile-picture {
-  text-align: center;
-}
-.profile-picture img {
-  border-radius: 7px;
+  margin-left: 7px;
 }
 .tab-bar {
   border-bottom: 1px solid #ddd;
@@ -94,7 +137,7 @@ header {
 }
 .tab-bar-left li {
   float: left;
-  margin-left: 8px;
+  margin-left: 12px;
   list-style: none;
   padding: 8px 12px 7px;
   color: #666;
@@ -145,9 +188,11 @@ header {
 }
 .repo-left h5 {
   color: #888;
+  font-size: 12px;
 }
-.repo-left h4 {
+.repo-left p {
   color: #666;
+  font-size: 14px;
 }
 .repo-right {
   float: right;
